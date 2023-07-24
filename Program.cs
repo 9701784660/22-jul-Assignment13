@@ -2,6 +2,7 @@
 /*namespace _22_7_Assignment_13
 {
   //Task 1: Hello World
+
         class Program
         {
             static void Main(string[] args)
@@ -11,7 +12,7 @@
             }
 
         }
-    }*/
+}*/
 
 
 
@@ -44,36 +45,24 @@
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("Enter the first number:");
-                int num1 = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine("Enter the second number:");
-                int num2 = Convert.ToInt32(Console.ReadLine());
-
-                int sum = num1 + num2;
-                int difference = num1 - num2;
-                int product = num1 * num2;
-
-                Console.WriteLine($"Sum: {sum}");
-                Console.WriteLine($"Difference: {difference}");
-                Console.WriteLine($"Product: {product}");
-
-                if (num2 != 0)
-                {
-                    double division = (double)num1 / num2;
-                    double modulus = num1 % num2;
-
-                    Console.WriteLine($"Division: {division}");
-                    Console.WriteLine($"Modulus: {modulus}");
-                }
-                else
-                {
-                    Console.WriteLine("Cannot divide by zero.");
-                }
-                  Console.ReadKey();
-            }
+              Console.WriteLine("Enter First Number");
+              int a = int.Parse(Console.ReadLine());
+              Console.WriteLine("Enter Second Number");
+              int b = int.Parse(Console.ReadLine());
+              int sum = a + b;
+              int subtraction = a - b;
+              int multiply = a * b;
+              double division = a / b;
+              double mdivision = a % b;
+              Console.WriteLine($" sum is: { sum}" );
+              Console.WriteLine($"subtraction is : {subtraction}");
+              Console.WriteLine($"multiplication is : {multiply}");
+              Console.WriteLine($"division is : {division}");
+              Console.WriteLine($"mdivision : {mdivision} ");
+              Console.ReadKey();
+             }
         }
-    }*/
+  }*/
 
 
 // Task 4: Control Structures
@@ -86,18 +75,17 @@
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("Enter an integer:");
-                int number = Convert.ToInt32(Console.ReadLine());
-
-                if (number % 2 == 0)
-                {
-                    Console.WriteLine($"{number} is even.");
-                }
-                else
-                {
-                    Console.WriteLine($"{number} is odd.");
-                }
-            Console.ReadKey();
+              Console.WriteLine("Enter a Num to Know whether it is even or odd");
+              int a = int.Parse(Console.ReadLine());
+              if (a % 2 == 0)
+              {
+                  Console.WriteLine("Its even");
+              }
+              else
+              {
+                  Console.WriteLine("Its odd");
+              }
+              Console.ReadKey();
             }
         }
     }*/
@@ -108,20 +96,20 @@
 
 
 /*namespace _22_7_Assignment_13
+{
+    class Program
     {
-        class Program
+        static void Main(string[] args)
         {
-            static void Main(string[] args)
+           for (int i = 1; i <= 10; i++)
             {
-                for (int i = 1; i <= 10; i++)
-                {
-                    Console.WriteLine(i);
-                }
-            Console.ReadKey();
+                Console.WriteLine(i);
             }
-        
+               Console.ReadKey();
+           
         }
-    }*/
+    }
+} */
 
 
 
@@ -129,29 +117,35 @@
 
 
 
-namespace _22_7_Assignment_13
-    {
+/*namespace _22_7_Assignment_13
+{
     class Program
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 5, 10, 15, 20, 25 };
-
+             int[] list = { 10, 25, 20, 30, 50 };
             int sum = 0;
-            foreach (int num in numbers)
+            foreach (int i in list)
             {
-                sum += num;
+                sum += i;
             }
-
-            double average = (double)sum / numbers.Length;
-
-            Console.WriteLine($"Sum: {sum}");
-            Console.WriteLine($"Average: {average}");
+            int avg = sum/ list.Length;
+            Console.WriteLine($" sum is {sum}");
+            Console.WriteLine($" avg is {avg}");
             Console.ReadKey();
+
         }
 
     }
-    }
+} */
+
+
+           
+
+
+
+
+           
 
 
 //  Task 7: Methods
